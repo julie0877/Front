@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(110, 110, 110);
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+}
+
+h1,
+.icons {
+    background: #833AB4;
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+}
+
+.icons {
+    width: 100vw;
+    justify-content: space-evenly;
+    height: 30px;
+}
+
+.cadastro {
+    align-items: center;
+    display: flex;
+    justify-content:space-around;
+    flex-direction: column;
+}
+
+label {
+    color: wheat;
+}
+.cadastrar{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+img{
+    display:flex  ;
+    border-radius: 12px;
+    width: 350px;
+    height: 350px;
+}
+.imglado{
+    display: flex;
+    align-items: flex-end;
+    float: right;
+    border-radius: 12px;
+    width: 350px;
+    height: 350px;
+}
+nav{
+    background-color: rgb(128, 20, 20);
+}
+
+.nav-menu{
+     background: #833AB4;
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 16px;
+}
+
+.nav-item{
+    position: relative;
+}
+
+.nav-link{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.nav-link:hover{
+    color: blanchedalmond;
+}
+
+.nav-link::after{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: rgb(255, 0, 0);
+    left: 0;
+    bottom: 0;
+    transform: scale(0);
+    transition:  all 0.5s ease-out;
+     transform-origin: bottom-left;
+}
+
+.nav-link:hover::after{
+    transform: scale(1);
+   
+}
